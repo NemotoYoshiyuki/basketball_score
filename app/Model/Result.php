@@ -22,7 +22,7 @@ class Result extends AppModel {
 	public $validate = array(
 		'result' => array(
 			'notEmpty' => array(
-				'rule' => array('numeric'),
+				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
