@@ -1,7 +1,5 @@
 <?php
 /**
- *
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -51,7 +49,7 @@
  * database. Uses database default not specified.
  *
  * sslmode =>
- * For Postgres specifies whether to 'disable', 'allow', 'prefer', or 'require' SSL for the 
+ * For Postgres specifies whether to 'disable', 'allow', 'prefer', or 'require' SSL for the
  * connection. The default value is 'allow'.
  *
  * unix_socket =>
@@ -78,4 +76,6 @@ class DATABASE_CONFIG {
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
+
+
 }
