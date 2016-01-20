@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2016 年 1 朁E20 日 11:45
+-- Generation Time: 2016 年 1 朁E20 日 12:25
 -- サーバのバージョン： 5.6.25
 -- PHP Version: 5.6.11
 
@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS `results` (
   `id` int(11) NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
-  `result` int(11) NOT NULL
+  `result` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
