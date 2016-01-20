@@ -72,7 +72,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'basket_score',
+		'database' => 'basketball_score',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
