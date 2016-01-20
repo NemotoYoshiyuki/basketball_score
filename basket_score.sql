@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2016 年 1 朁E19 日 11:46
+-- Generation Time: 2016 年 1 朁E20 日 07:54
 -- サーバのバージョン： 5.6.25
 -- PHP Version: 5.6.11
 
@@ -31,7 +31,8 @@ CREATE TABLE IF NOT EXISTS `away_players` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   `away_player_name` varchar(64) NOT NULL,
-  `away_team_id` int(11) NOT NULL
+  `away_team_id` int(11) NOT NULL,
+  `position_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -58,7 +59,8 @@ CREATE TABLE IF NOT EXISTS `home_players` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   `home_player_name` varchar(64) NOT NULL,
-  `home_team_id` int(11) NOT NULL
+  `home_team_id` int(11) NOT NULL,
+  `position_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -72,6 +74,19 @@ CREATE TABLE IF NOT EXISTS `home_teams` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   `home_team_name` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `positions`
+--
+
+CREATE TABLE IF NOT EXISTS `positions` (
+  `id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `position_name` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -132,6 +147,12 @@ ALTER TABLE `home_teams`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `positions`
+--
+ALTER TABLE `positions`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `results`
 --
 ALTER TABLE `results`
@@ -166,6 +187,11 @@ ALTER TABLE `home_players`
 -- AUTO_INCREMENT for table `home_teams`
 --
 ALTER TABLE `home_teams`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `positions`
+--
+ALTER TABLE `positions`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `results`
