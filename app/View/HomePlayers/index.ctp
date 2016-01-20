@@ -56,5 +56,6 @@
 		<li><?php echo $this->Html->link(__('New Home Player'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Positions'), array('controller' => 'positions', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Position'), array('controller' => 'positions', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Matches'), array('controller' => 'matches', 'action' => 'index')); ?> </li>
 	</ul>
 </div>

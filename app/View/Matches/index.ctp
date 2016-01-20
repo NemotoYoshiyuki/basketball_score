@@ -60,5 +60,6 @@
 		<li><?php echo $this->Html->link(__('New Result'), array('controller' => 'results', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Away Teams'), array('controller' => 'away_teams', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Away Team'), array('controller' => 'away_teams', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Home Players'), array('controller' => 'home_players', 'action' => 'index')); ?> </li>
 	</ul>
 </div>
