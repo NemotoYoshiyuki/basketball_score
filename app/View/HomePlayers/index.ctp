@@ -24,7 +24,7 @@
 		<td><?php echo h($homePlayer['HomePlayer']['modified']); ?>&nbsp;</td>
 		<td><?php echo h($homePlayer['HomePlayer']['home_player_name']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($homePlayer['Position']['id'], array('controller' => 'positions', 'action' => 'view', $homePlayer['Position']['id'])); ?>
+			<?php echo $this->Html->link($homePlayer['Position']['position_name'], array('controller' => 'positions', 'action' => 'view', $homePlayer['Position']['id'])); ?>
 		</td>
 		<td><?php echo h($homePlayer['HomePlayer']['height']); ?>&nbsp;</td>
 		<td><?php echo h($homePlayer['HomePlayer']['weight']); ?>&nbsp;</td>
