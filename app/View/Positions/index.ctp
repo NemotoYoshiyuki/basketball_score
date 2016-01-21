@@ -14,7 +14,7 @@
 	<tr>
 		<td><?php echo h($position['Position']['id']); ?>&nbsp;</td>
 		<td><?php echo h($position['Position']['position_name']); ?>&nbsp;</td>
-		<td><?php echo h($position['Position']['text']); ?>&nbsp;</td>
+		<td><?php echo mb_substr($position['Position']['text'],0,50); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $position['Position']['id'])); ?>
 			<?php /* echo $this->Html->link(__('Edit'), array('action' => 'edit', $position['Position']['id'])); */ ?>
