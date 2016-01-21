@@ -4,8 +4,6 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
 			<th><?php echo $this->Paginator->sort('position_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('text'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -15,8 +13,6 @@
 	<?php foreach ($positions as $position): ?>
 	<tr>
 		<td><?php echo h($position['Position']['id']); ?>&nbsp;</td>
-		<td><?php echo h($position['Position']['created']); ?>&nbsp;</td>
-		<td><?php echo h($position['Position']['modified']); ?>&nbsp;</td>
 		<td><?php echo h($position['Position']['position_name']); ?>&nbsp;</td>
 		<td><?php echo h($position['Position']['text']); ?>&nbsp;</td>
 		<td class="actions">

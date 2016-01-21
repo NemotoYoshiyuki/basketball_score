@@ -23,12 +23,12 @@
 		</dd>
 		<dt><?php echo __('Result'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($match['Result']['id'], array('controller' => 'results', 'action' => 'view', $match['Result']['id'])); ?>
+			<?php echo $this->Html->link($match['Result']['result'], array('controller' => 'results', 'action' => 'view', $match['Result']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Away Team'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($match['AwayTeam']['id'], array('controller' => 'away_teams', 'action' => 'view', $match['AwayTeam']['id'])); ?>
+			<?php echo $this->Html->link($match['AwayTeam']['away_team_name'], array('controller' => 'away_teams', 'action' => 'view', $match['AwayTeam']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Get Score'); ?></dt>
