@@ -5,7 +5,7 @@
 	<?php
 		echo $this->Form->input('game_day',array(
 			'label' => array(
-				'text' => '開催日')
+				'text' => '開催日時')
 			)
 		);
 		echo $this->Form->input('result_id',array(
