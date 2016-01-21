@@ -21,6 +21,11 @@
 			<?php echo h($position['Position']['position_name']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Text'); ?></dt>
+		<dd>
+			<?php echo h($position['Position']['text']); ?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="actions">
@@ -47,6 +52,8 @@
 		<th><?php echo __('Height'); ?></th>
 		<th><?php echo __('Weight'); ?></th>
 		<th><?php echo __('Number'); ?></th>
+		<th><?php echo __('Comment'); ?></th>
+		<th><?php echo __('Player Photo'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($position['HomePlayer'] as $homePlayer): ?>
@@ -59,6 +66,8 @@
 			<td><?php echo $homePlayer['height']; ?></td>
 			<td><?php echo $homePlayer['weight']; ?></td>
 			<td><?php echo $homePlayer['number']; ?></td>
+			<td><?php echo $homePlayer['comment']; ?></td>
+			<td><?php echo $homePlayer['player_photo']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'home_players', 'action' => 'view', $homePlayer['id'])); ?>
 				<?php echo $this->Html->link(__('Edit'), array('controller' => 'home_players', 'action' => 'edit', $homePlayer['id'])); ?>

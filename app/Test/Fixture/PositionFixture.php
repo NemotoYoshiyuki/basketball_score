@@ -15,6 +15,7 @@ class PositionFixture extends CakeTestFixture {
 		'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'position_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 64, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'text' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -29,9 +30,10 @@ class PositionFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'created' => '2016-01-20 12:21:31',
-			'modified' => '2016-01-20 12:21:31',
-			'position_name' => 'Lorem ipsum dolor sit amet'
+			'created' => '2016-01-21 08:31:08',
+			'modified' => '2016-01-21 08:31:08',
+			'position_name' => 'Lorem ipsum dolor sit amet',
+			'text' => 'Lorem ipsum dolor sit amet'
 		),
 	);
 

@@ -41,6 +41,16 @@
 			<?php echo h($homePlayer['HomePlayer']['number']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Comment'); ?></dt>
+		<dd>
+			<?php echo h($homePlayer['HomePlayer']['comment']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Player Photo'); ?></dt>
+		<dd>
+			<?php echo h($homePlayer['HomePlayer']['player_photo']); ?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="actions">

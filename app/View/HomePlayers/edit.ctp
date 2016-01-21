@@ -9,6 +9,8 @@
 		echo $this->Form->input('height');
 		echo $this->Form->input('weight');
 		echo $this->Form->input('number');
+		echo $this->Form->input('comment');
+		echo $this->Form->input('player_photo');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
