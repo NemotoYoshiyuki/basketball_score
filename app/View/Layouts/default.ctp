@@ -27,7 +27,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-
 		echo $this->Html->css('cake.generic');
 
 		echo $this->fetch('meta');
@@ -38,7 +37,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php //echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<h1><?php echo $this->Html->link(__(' '), array('controller' => 'matches', 'action' => 'index')); ?></h1>
 		</div>
 		<div id="content">
 
