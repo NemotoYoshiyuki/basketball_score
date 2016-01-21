@@ -18,8 +18,7 @@
 	<tr>
 		<td><?php echo h($match['Match']['id']); ?>&nbsp;</td>
 		<td><?php echo h($match['Match']['game_day']); ?>&nbsp;</td>
-
-        <td><?php echo "やったね鈴木" ?>&nbsp;</td>
+        <td><?php echo $this->Html->link('やったね鈴木', array('controller' => 'home_players', 'action' => 'index')); ?>&nbsp;</td>
 		<td><?php echo h($match['Match']['get_score']); ?>&nbsp;</td>
 		<td>
             <?php echo $this->Html->link($match['Result']['result'], array('controller' => 'results', 'action' => 'view', $match['Result']['id'])); ?>
