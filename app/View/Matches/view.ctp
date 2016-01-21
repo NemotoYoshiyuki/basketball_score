@@ -23,7 +23,7 @@
 		</dd>
 		<dt><?php echo __('Result'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($match['Result']['id'], array('controller' => 'results', 'action' => 'view', $match['Result']['id'])); ?>
+			<?php echo h($match['Result']['result']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Away Team'); ?></dt>
