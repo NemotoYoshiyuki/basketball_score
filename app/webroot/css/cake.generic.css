@@ -78,13 +78,13 @@ p {
 }
 
 #header{
-	padding: 10px 20px;
+	padding: 10px 10px 5px 10px;
 }
 #header h1 {
 	line-height:20px;
-	background: #003d4c url('../img/cake.icon.png') no-repeat left;
-	color: #fff;
-	padding: 0px 30px;
+	background: #fff url('../img/img3485.gif') no-repeat center;
+	color: #003d4c;
+	padding: 45px 30px;
 }
 #header h1 a {
 	color: #fff;
@@ -106,7 +106,7 @@ p {
 }
 #footer {
 	clear: both;
-	padding: 6px 10px;
+	padding: 0px 0px;
 }
 #header a, #footer a {
 	color: #fff;
