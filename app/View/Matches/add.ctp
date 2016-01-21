@@ -3,7 +3,11 @@
 	<fieldset>
 		<legend><?php echo __('Add Match'); ?></legend>
 	<?php
-		echo $this->Form->input('game_day');
+		echo $this->Form->input('game_day',array(
+			'label' => array(
+				'text' => '開催日')
+			)	
+		);
 		echo $this->Form->input('result_id');
 		echo $this->Form->input('away_team_id');
 		echo $this->Form->input('get_score');
