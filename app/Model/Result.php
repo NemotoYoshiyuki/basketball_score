@@ -12,7 +12,7 @@ class Result extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'id';
+	public $displayField = 'result';
 
 /**
  * Validation rules
