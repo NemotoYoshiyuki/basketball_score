@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2016 年 1 朁E20 日 12:25
+-- Generation Time: 2016 年 1 朁E21 日 08:11
 -- サーバのバージョン： 5.6.25
 -- PHP Version: 5.6.11
 
@@ -47,7 +47,9 @@ CREATE TABLE IF NOT EXISTS `home_players` (
   `position_id` int(11) NOT NULL,
   `height` int(11) NOT NULL,
   `weight` int(11) NOT NULL,
-  `number` int(11) NOT NULL
+  `number` int(11) NOT NULL,
+  `comment` varchar(255) NOT NULL,
+  `player_photo` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -77,7 +79,8 @@ CREATE TABLE IF NOT EXISTS `positions` (
   `id` int(11) NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
-  `position_name` varchar(64) NOT NULL
+  `position_name` varchar(64) NOT NULL,
+  `text` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
