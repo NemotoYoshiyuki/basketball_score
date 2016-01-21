@@ -5,7 +5,7 @@
 	<div class="background">
 <table class="table">
 	<tr>
-		<td rowspan="6"><img class="player_img" src=<?php echo h($homePlayer['HomePlayer']['player_photo']); ?>></td>
+		<td rowspan="6"><img class="player_img" src=/basketball_score/app/webroot/img/player_photo/<?php echo h($homePlayer['HomePlayer']['player_photo']); ?>></td>
 		<td><?php echo __('選手名'); ?></td>
 		<td><?php echo h($homePlayer['HomePlayer']['home_player_name']); ?></td>
 	</tr>
@@ -17,7 +17,7 @@
 
 	<tr>
 		<td><?php echo __('ポジション'); ?></td>
-		<td><?php echo $this->Html->link($homePlayer['Position']['id'], array('controller' => 'positions', 'action' => 'view', $homePlayer['Position']['id'])); ?></td>
+		<td><?php echo $this->Html->link($homePlayer['Position']['position_name'], array('controller' => 'positions', 'action' => 'view', $homePlayer['Position']['id'])); ?></td>
 	</tr>
 
 	<tr>
