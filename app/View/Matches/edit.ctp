@@ -4,11 +4,31 @@
 		<legend><?php echo __('Edit Match'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('game_day');
-		echo $this->Form->input('result_id');
-		echo $this->Form->input('away_team_id');
-		echo $this->Form->input('get_score');
-		echo $this->Form->input('loss_score');
+		echo $this->Form->input('game_day',array(
+			'label' => array(
+				'text' => '開催日時'
+			)
+		));
+		echo $this->Form->input('result_id',array(
+			'label' => array(
+				'text' => '結果'
+			)
+		));
+		echo $this->Form->input('away_team_id',array(
+			'label' => array(
+				'text' => '対戦相手'
+			)
+		));
+		echo $this->Form->input('get_score',array(
+			'label' => array(
+				'text' => '得点'
+			)
+		));
+		echo $this->Form->input('loss_score',array(
+			'label' => array(
+				'text' => '失点'
+			)
+		));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
