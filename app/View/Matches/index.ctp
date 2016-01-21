@@ -3,14 +3,13 @@
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th><?php echo $this->Paginator->sort('game_day'); ?></th>
-			<th><?php echo $this->Paginator->sort('result_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('away_team_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('get_score'); ?></th>
-			<th><?php echo $this->Paginator->sort('loss_score'); ?></th>
+			<th><?php echo $this->Paginator->sort(''); ?></th>
+			<th><?php echo $this->Paginator->sort('game_day','開催日時'); ?></th>
+			<th><?php echo $this->Paginator->sort('チーム'); ?></th>
+			<th><?php echo $this->Paginator->sort('get_score','得点'); ?></th>
+			<th><?php echo $this->Paginator->sort('result_id','結果'); ?></th>
+			<th><?php echo $this->Paginator->sort('loss_score','失点'); ?></th>
+			<th><?php echo $this->Paginator->sort('away_team_id','対戦相手'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -18,17 +17,17 @@
 	<?php foreach ($matches as $match): ?>
 	<tr>
 		<td><?php echo h($match['Match']['id']); ?>&nbsp;</td>
-		<td><?php echo h($match['Match']['created']); ?>&nbsp;</td>
-		<td><?php echo h($match['Match']['modified']); ?>&nbsp;</td>
 		<td><?php echo h($match['Match']['game_day']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($match['Result']['id'], array('controller' => 'results', 'action' => 'view', $match['Result']['id'])); ?>
-		</td>
-		<td>
-			<?php echo $this->Html->link($match['AwayTeam']['id'], array('controller' => 'away_teams', 'action' => 'view', $match['AwayTeam']['id'])); ?>
-		</td>
+
+        <td><?php echo "やったね鈴木" ?>&nbsp;</td>
 		<td><?php echo h($match['Match']['get_score']); ?>&nbsp;</td>
-		<td><?php echo h($match['Match']['loss_score']); ?>&nbsp;</td>
+		<td>
+                			<?php echo $this->Html->link($match['Result']['result'], array('controller' => 'results', 'action' => 'view', $match['Result']['id'])); ?>
+        </td>
+        <td><?php echo h($match['Match']['loss_score']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($match['AwayTeam']['away_team_name'], array('controller' => 'away_teams', 'action' => 'view', $match['AwayTeam']['id'])); ?>
+		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $match['Match']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $match['Match']['id'])); ?>
