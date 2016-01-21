@@ -5,29 +5,29 @@
 	<?php
 		echo $this->Form->input('game_day',array(
 			'label' => array(
-				'text' => '開催日時')
+				'text' => '開催日時'
 			)
-		);
+		));
 		echo $this->Form->input('result_id',array(
 			'label' => array(
-				'text' => '結果')
+				'text' => '結果'
 			)
-		);
+		));
 		echo $this->Form->input('away_team_id',array(
 			'label' => array(
-				'text' => '対戦相手')
+				'text' => '対戦相手'
 			)
-		);
+		));
 		echo $this->Form->input('get_score',array(
 			'label' => array(
-				'text' => '得点')
+				'text' => '得点'
 			)
-		);
+		));
 		echo $this->Form->input('loss_score',array(
 			'label' => array(
-				'text' => '失点')
+				'text' => '失点'
 			)
-		);
+		));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

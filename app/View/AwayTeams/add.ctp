@@ -3,7 +3,11 @@
 	<fieldset>
 		<legend><?php echo __('Add Away Team'); ?></legend>
 	<?php
-		echo $this->Form->input('away_team_name');
+		echo $this->Form->input('away_team_name',array(
+			'label' => array(
+				'text' => "対戦相手"
+			)
+		));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
