@@ -12,7 +12,7 @@ class Position extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'id';
+	public $displayField = 'position_name';
 
 /**
  * Validation rules
@@ -21,6 +21,16 @@ class Position extends AppModel {
  */
 	public $validate = array(
 		'position_name' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'text' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',

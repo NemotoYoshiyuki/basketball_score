@@ -11,6 +11,8 @@
 			<th><?php echo $this->Paginator->sort('height'); ?></th>
 			<th><?php echo $this->Paginator->sort('weight'); ?></th>
 			<th><?php echo $this->Paginator->sort('number'); ?></th>
+			<th><?php echo $this->Paginator->sort('comment'); ?></th>
+			<th><?php echo $this->Paginator->sort('player_photo'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -27,6 +29,8 @@
 		<td><?php echo h($homePlayer['HomePlayer']['height']); ?>&nbsp;</td>
 		<td><?php echo h($homePlayer['HomePlayer']['weight']); ?>&nbsp;</td>
 		<td><?php echo h($homePlayer['HomePlayer']['number']); ?>&nbsp;</td>
+		<td><?php echo h($homePlayer['HomePlayer']['comment']); ?>&nbsp;</td>
+		<td><?php echo h($homePlayer['HomePlayer']['player_photo']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $homePlayer['HomePlayer']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $homePlayer['HomePlayer']['id'])); ?>

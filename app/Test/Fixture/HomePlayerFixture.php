@@ -19,6 +19,8 @@ class HomePlayerFixture extends CakeTestFixture {
 		'height' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
 		'weight' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
 		'number' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
+		'comment' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'player_photo' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 64, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -33,13 +35,15 @@ class HomePlayerFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'created' => '2016-01-20 12:14:25',
-			'modified' => '2016-01-20 12:14:25',
+			'created' => '2016-01-21 08:29:06',
+			'modified' => '2016-01-21 08:29:06',
 			'home_player_name' => 'Lorem ipsum dolor sit amet',
 			'position_id' => 1,
 			'height' => 1,
 			'weight' => 1,
-			'number' => 1
+			'number' => 1,
+			'comment' => 'Lorem ipsum dolor sit amet',
+			'player_photo' => 'Lorem ipsum dolor sit amet'
 		),
 	);
 
