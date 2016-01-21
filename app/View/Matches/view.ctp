@@ -16,26 +16,26 @@
 			<?php echo h($match['Match']['modified']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Game Day'); ?></dt>
+		<dt><?php echo __('開催日時'); ?></dt>
 		<dd>
 			<?php echo h($match['Match']['game_day']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Result'); ?></dt>
+		<dt><?php echo __('結果'); ?></dt>
 		<dd>
 			<?php echo h($match['Result']['result']); ?>
 		</dd>
-		<dt><?php echo __('Away Team'); ?></dt>
+		<dt><?php echo __('対戦相手'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($match['AwayTeam']['away_team_name'], array('controller' => 'away_teams', 'action' => 'view', $match['AwayTeam']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Get Score'); ?></dt>
+		<dt><?php echo __('得点'); ?></dt>
 		<dd>
 			<?php echo h($match['Match']['get_score']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Loss Score'); ?></dt>
+		<dt><?php echo __('失点'); ?></dt>
 		<dd>
 			<?php echo h($match['Match']['loss_score']); ?>
 			&nbsp;
