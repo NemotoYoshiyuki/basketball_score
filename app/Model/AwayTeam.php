@@ -12,7 +12,7 @@ class AwayTeam extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'id';
+	public $displayField = 'away_team_name';
 
 /**
  * Validation rules
