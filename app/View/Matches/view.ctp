@@ -16,27 +16,26 @@
 			<?php echo h($match['Match']['modified']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Game Day'); ?></dt>
+		<dt><?php echo __('開催日時'); ?></dt>
 		<dd>
 			<?php echo h($match['Match']['game_day']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Result'); ?></dt>
+		<dt><?php echo __('結果'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($match['Result']['result'], array('controller' => 'results', 'action' => 'view', $match['Result']['id'])); ?>
-			&nbsp;
+			<?php echo h($match['Result']['result']); ?>
 		</dd>
-		<dt><?php echo __('Away Team'); ?></dt>
+		<dt><?php echo __('対戦相手'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($match['AwayTeam']['away_team_name'], array('controller' => 'away_teams', 'action' => 'view', $match['AwayTeam']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Get Score'); ?></dt>
+		<dt><?php echo __('得点'); ?></dt>
 		<dd>
 			<?php echo h($match['Match']['get_score']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Loss Score'); ?></dt>
+		<dt><?php echo __('失点'); ?></dt>
 		<dd>
 			<?php echo h($match['Match']['loss_score']); ?>
 			&nbsp;
@@ -50,8 +49,6 @@
 		<li><?php echo $this->Form->postLink(__('Delete Match'), array('action' => 'delete', $match['Match']['id']), array(), __('Are you sure you want to delete # %s?', $match['Match']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Matches'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Match'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Results'), array('controller' => 'results', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Result'), array('controller' => 'results', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Away Teams'), array('controller' => 'away_teams', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Away Team'), array('controller' => 'away_teams', 'action' => 'add')); ?> </li>
 	</ul>

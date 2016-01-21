@@ -21,7 +21,7 @@
         <td><?php echo $this->Html->link('やったね鈴木', array('controller' => 'home_players', 'action' => 'index')); ?>&nbsp;</td>
 		<td><?php echo h($match['Match']['get_score']); ?>&nbsp;</td>
 		<td>
-            <?php echo $this->Html->link($match['Result']['result'], array('controller' => 'results', 'action' => 'view', $match['Result']['id'])); ?>
+            <?php echo h($match['Result']['result']); ?>
         </td>
         <td><?php echo h($match['Match']['loss_score']); ?>&nbsp;</td>
 		<td>
@@ -54,8 +54,6 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Match'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Results'), array('controller' => 'results', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Result'), array('controller' => 'results', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Away Teams'), array('controller' => 'away_teams', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Away Team'), array('controller' => 'away_teams', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Home Players'), array('controller' => 'home_players', 'action' => 'index')); ?> </li>
