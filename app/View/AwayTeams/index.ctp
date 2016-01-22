@@ -4,9 +4,7 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th><?php echo $this->Paginator->sort('away_team_name'); ?></th>
+			<th><?php echo $this->Paginator->sort('away_team_name','対戦相手'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -14,8 +12,6 @@
 	<?php foreach ($awayTeams as $awayTeam): ?>
 	<tr>
 		<td><?php echo h($awayTeam['AwayTeam']['id']); ?>&nbsp;</td>
-		<td><?php echo h($awayTeam['AwayTeam']['created']); ?>&nbsp;</td>
-		<td><?php echo h($awayTeam['AwayTeam']['modified']); ?>&nbsp;</td>
 		<td><?php echo h($awayTeam['AwayTeam']['away_team_name']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $awayTeam['AwayTeam']['id'])); ?>

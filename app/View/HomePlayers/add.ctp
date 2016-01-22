@@ -3,13 +3,41 @@
 	<fieldset>
 		<legend><?php echo __('Add Home Player'); ?></legend>
 	<?php
-		echo $this->Form->input('home_player_name');
-		echo $this->Form->input('position_id');
-		echo $this->Form->input('height');
-		echo $this->Form->input('weight');
-		echo $this->Form->input('number');
-		echo $this->Form->input('comment');
-		echo $this->Form->input('player_photo');
+		echo $this->Form->input('home_player_name',array(
+			'label' => array(
+				'text' => '選手名'
+			)
+		));
+		echo $this->Form->input('number',array(
+			'label' => array(
+				'text' => '背番号'
+			)
+		));
+		echo $this->Form->input('position_id',array(
+			'label' => array(
+				'text' => 'ポジション'
+			)
+		));
+		echo $this->Form->input('height',array(
+			'label' => array(
+				'text' => '身長'
+			)
+		));
+		echo $this->Form->input('weight',array(
+			'label' => array(
+				'text' => '体重'
+			)
+		));
+		echo $this->Form->input('comment',array(
+			'label' => array(
+				'text' => 'コメント'
+			)
+		));
+		echo $this->Form->input('player_photo',array(
+			'label' => array(
+				'text' => 'ピクチャー'
+			)
+		));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

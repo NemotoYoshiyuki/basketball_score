@@ -6,6 +6,11 @@
 			<?php echo h($awayTeam['AwayTeam']['id']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('対戦相手'); ?></dt>
+		<dd>
+			<?php echo h($awayTeam['AwayTeam']['away_team_name']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Created'); ?></dt>
 		<dd>
 			<?php echo h($awayTeam['AwayTeam']['created']); ?>
@@ -14,11 +19,6 @@
 		<dt><?php echo __('Modified'); ?></dt>
 		<dd>
 			<?php echo h($awayTeam['AwayTeam']['modified']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Away Team Name'); ?></dt>
-		<dd>
-			<?php echo h($awayTeam['AwayTeam']['away_team_name']); ?>
 			&nbsp;
 		</dd>
 	</dl>

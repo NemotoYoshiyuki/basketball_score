@@ -3,8 +3,16 @@
 	<fieldset>
 		<legend><?php echo __('Add Position'); ?></legend>
 	<?php
-		echo $this->Form->input('position_name');
-		echo $this->Form->input('text');
+		echo $this->Form->input('position_name',array(
+			'label' => array(
+				'text' => 'ポジション名'
+			)
+		));
+		echo $this->Form->input('text',array(
+			'label' => array(
+				'text' => '説明'
+			)
+		));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
