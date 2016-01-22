@@ -26,9 +26,9 @@
 		<td><?php echo h($homePlayer['HomePlayer']['weight']); ?>kg&nbsp;</td>
 		<td><?php echo h($homePlayer['HomePlayer']['comment']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('詳細'), array('action' => 'view', $homePlayer['HomePlayer']['id'])); ?>
-			<?php echo $this->Html->link(__('編集'), array('action' => 'edit', $homePlayer['HomePlayer']['id'])); ?>
-			<?php echo $this->Form->postLink(__('削除'), array('action' => 'delete', $homePlayer['HomePlayer']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $homePlayer['HomePlayer']['id']))); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $homePlayer['HomePlayer']['id'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $homePlayer['HomePlayer']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $homePlayer['HomePlayer']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $homePlayer['HomePlayer']['id']))); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -52,8 +52,9 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Home Player'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Positions'), array('controller' => 'positions', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Position'), array('controller' => 'positions', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Matches'), array('controller' => 'matches', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Home Players'), array('controller' => 'home_players','action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Positions'), array('controller' => 'positions', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Away Teams'), array('controller' => 'away_teams', 'action' => 'index')); ?> </li>	
 	</ul>
 </div>
