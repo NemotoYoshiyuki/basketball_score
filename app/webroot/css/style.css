@@ -9,10 +9,25 @@ body {
 
 }
 
+a:link {
+    color: #0000ff;
+}
+
+a:visited {
+    color: #000080;
+}
+
 a:hover {
     color: #367889;
     text-decoration:none;
 }
+
+a:active{
+    color: #8b0000;
+    text-decoration:none;
+}
+
+
 
 h2 {
     color: #003d4c;
@@ -63,9 +78,19 @@ div.actions {
 }
 
 div.actions h3 {
-    padding-top: 25px;
+    padding: 25px 0 10px 0;
     color:#777;
 }
+
+div.related h3{
+    text-align: left;
+}
+
+div.related table{
+    margin: 0 auto 0 auto;
+}
+
+
 
 table {
     border-right:0;
@@ -114,6 +139,8 @@ table td.actions a {
 table tr:nth-child(even) {
     background: rgba(0,0,255,0.1);
 }
+
+
 
 /**  Actions  **/
 .actions ul {
@@ -169,4 +196,28 @@ fieldset label {
 .actions a:hover {
     border-color: #000000;
     text-decoration: none;
+}
+
+/** Scaffold View **/
+
+dl {
+    line-height: 2em;
+    margin: 0em 0em;
+    width: 60%;
+}
+dl dd:nth-child(4n+2),
+dl dt:nth-child(4n+1) {
+    background:rgba(110,202,255,0.3);
+}
+
+dt {
+    font-weight: bold;
+    padding-left: 4px;
+    vertical-align: top;
+    width: 10em;
+}
+dd {
+    margin-left: 10.5em;
+    margin-top: -2em;
+    vertical-align: top;
 }
