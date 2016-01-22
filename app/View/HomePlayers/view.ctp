@@ -49,12 +49,12 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('選手リスト'), array('action' => 'index')); ?> </li>
-		<br><li><?php echo $this->Html->link(__('選手情報の編集'), array('action' => 'edit', $homePlayer['HomePlayer']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('New Home Player'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('選手情報の編集'), array('action' => 'edit', $homePlayer['HomePlayer']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('選手情報を消去'), array('action' => 'delete', $homePlayer['HomePlayer']['id']), array(), __('この選手情報を消去しますか？ # %s?', $homePlayer['HomePlayer']['id'])); ?> </li>
-
-		<li><?php echo $this->Html->link(__('New Home Player'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Matches'), array('controller' => 'matches', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('選手リスト'), array('controller' => 'home_players','action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List Positions'), array('controller' => 'positions', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Position'), array('controller' => 'positions', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Away Teams'), array('controller' => 'away_teams', 'action' => 'index')); ?> </li>
 	</ul>
 </div>
