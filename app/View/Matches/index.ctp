@@ -3,7 +3,7 @@
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
-			<th><?php echo $this->Paginator->sort(''); ?></th>
+			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('game_day','開催日時'); ?></th>
 			<th><?php echo $this->Paginator->sort('チーム'); ?></th>
 			<th><?php echo $this->Paginator->sort('get_score','得点'); ?></th>
