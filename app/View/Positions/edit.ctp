@@ -4,8 +4,16 @@
 		<legend><?php echo __('Edit Position'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('position_name');
-		echo $this->Form->input('text');
+		echo $this->Form->input('position_name',array(
+			'label' => array(
+				'text' => 'ポジション'
+			)
+		));
+		echo $this->Form->input('text',array(
+			'label' => array(
+				'text' => '説明'
+			)
+		));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

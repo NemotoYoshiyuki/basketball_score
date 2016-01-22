@@ -16,12 +16,12 @@
 			<?php echo h($position['Position']['modified']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Position Name'); ?></dt>
+		<dt><?php echo __('ポジション'); ?></dt>
 		<dd>
 			<?php echo h($position['Position']['position_name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Text'); ?></dt>
+		<dt><?php echo __('説明'); ?></dt>
 		<dd>
 			<?php echo h($position['Position']['text']); ?>
 			&nbsp;
@@ -32,11 +32,10 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Position'), array('action' => 'edit', $position['Position']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Position'), array('action' => 'delete', $position['Position']['id']), array(), __('Are you sure you want to delete # %s?', $position['Position']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Positions'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Position'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Home Players'), array('controller' => 'home_players', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Home Player'), array('controller' => 'home_players', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Matches'), array('controller' => 'matches', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Home Players'), array('controller' => 'home_players','action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Positions'), array('controller' => 'positions', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Away Teams'), array('controller' => 'away_teams', 'action' => 'index')); ?> </li>
 	</ul>
 </div>
 <div class="related">
@@ -45,29 +44,23 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th><?php echo __('Home Player Name'); ?></th>
-		<th><?php echo __('Position Id'); ?></th>
-		<th><?php echo __('Height'); ?></th>
-		<th><?php echo __('Weight'); ?></th>
-		<th><?php echo __('Number'); ?></th>
-		<th><?php echo __('Comment'); ?></th>
-		<th><?php echo __('Player Photo'); ?></th>
+		<th><?php echo __('選手名'); ?></th>
+		<th><?php echo __('背番号'); ?></th>
+		<th><?php echo __('ポジション'); ?></th>
+		<th><?php echo __('身長'); ?></th>
+		<th><?php echo __('体重'); ?></th>
+		<th><?php echo __('コメント'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($position['HomePlayer'] as $homePlayer): ?>
 		<tr>
 			<td><?php echo $homePlayer['id']; ?></td>
-			<td><?php echo $homePlayer['created']; ?></td>
-			<td><?php echo $homePlayer['modified']; ?></td>
 			<td><?php echo $homePlayer['home_player_name']; ?></td>
-			<td><?php echo $homePlayer['position_id']; ?></td>
-			<td><?php echo $homePlayer['height']; ?></td>
-			<td><?php echo $homePlayer['weight']; ?></td>
 			<td><?php echo $homePlayer['number']; ?></td>
+			<td><?php echo $homePlayer['Position']['position_name']; ?></td>
+			<td><?php echo $homePlayer['height']; ?>cm</td>
+			<td><?php echo $homePlayer['weight']; ?>kg</td>
 			<td><?php echo $homePlayer['comment']; ?></td>
-			<td><?php echo $homePlayer['player_photo']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'home_players', 'action' => 'view', $homePlayer['id'])); ?>
 				<?php echo $this->Html->link(__('Edit'), array('controller' => 'home_players', 'action' => 'edit', $homePlayer['id'])); ?>

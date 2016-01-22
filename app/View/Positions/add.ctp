@@ -5,7 +5,7 @@
 	<?php
 		echo $this->Form->input('position_name',array(
 			'label' => array(
-				'text' => 'ポジション名'
+				'text' => 'ポジション'
 			)
 		));
 		echo $this->Form->input('text',array(
