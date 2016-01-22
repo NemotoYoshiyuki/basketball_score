@@ -22,8 +22,8 @@
 		<td>
 			<?php echo $this->Html->link($homePlayer['Position']['position_name'], array('controller' => 'positions', 'action' => 'view', $homePlayer['Position']['id'])); ?>
 		</td>
-		<td><?php echo h($homePlayer['HomePlayer']['height']); ?>&nbsp;</td>
-		<td><?php echo h($homePlayer['HomePlayer']['weight']); ?>&nbsp;</td>
+		<td><?php echo h($homePlayer['HomePlayer']['height']); ?>cm&nbsp;</td>
+		<td><?php echo h($homePlayer['HomePlayer']['weight']); ?>kg&nbsp;</td>
 		<td><?php echo h($homePlayer['HomePlayer']['comment']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('詳細'), array('action' => 'view', $homePlayer['HomePlayer']['id'])); ?>
