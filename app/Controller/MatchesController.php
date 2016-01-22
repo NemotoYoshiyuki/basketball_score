@@ -15,7 +15,6 @@ class MatchesController extends AppController {
  * @var array
  */
 	public $components = array('Paginator', 'Session');
-
 /**
  * index method
  *
@@ -108,4 +107,6 @@ class MatchesController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+
+
 }
