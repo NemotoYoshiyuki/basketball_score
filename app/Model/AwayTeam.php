@@ -13,6 +13,7 @@ class AwayTeam extends AppModel {
  * @var string
  */
 	public $displayField = 'away_team_name';
+	public $recursive = 3;
 
 /**
  * Validation rules

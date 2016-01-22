@@ -40,25 +40,21 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th><?php echo __('Game Day'); ?></th>
-		<th><?php echo __('Result Id'); ?></th>
-		<th><?php echo __('Away Team Id'); ?></th>
-		<th><?php echo __('Get Score'); ?></th>
-		<th><?php echo __('Loss Score'); ?></th>
+		<th><?php echo __('開催日時'); ?></th>
+		<th><?php echo __('得点'); ?></th>
+		<th><?php echo __('結果'); ?></th>
+		<th><?php echo __('失点'); ?></th>
+		<th><?php echo __('対戦相手'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($awayTeam['Match'] as $match): ?>
 		<tr>
 			<td><?php echo $match['id']; ?></td>
-			<td><?php echo $match['created']; ?></td>
-			<td><?php echo $match['modified']; ?></td>
 			<td><?php echo $match['game_day']; ?></td>
-			<td><?php echo $match['result_id']; ?></td>
-			<td><?php echo $match['away_team_id']; ?></td>
 			<td><?php echo $match['get_score']; ?></td>
+			<td><?php echo $match['Result']['result']; ?></td>
 			<td><?php echo $match['loss_score']; ?></td>
+			<td><?php echo $match['AwayTeam']['away_team_name']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'matches', 'action' => 'view', $match['id'])); ?>
 				<?php echo $this->Html->link(__('Edit'), array('controller' => 'matches', 'action' => 'edit', $match['id'])); ?>
