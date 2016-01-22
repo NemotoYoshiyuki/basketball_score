@@ -13,6 +13,7 @@ class Position extends AppModel {
  * @var string
  */
 	public $displayField = 'position_name';
+	public $recursive = 3;
 
 /**
  * Validation rules
