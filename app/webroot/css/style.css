@@ -111,6 +111,10 @@ table td.actions a {
     padding:2px 5px;
 }
 
+table tr:nth-child(even) {
+    background: rgba(0,0,255,0.1);
+}
+
 /**  Actions  **/
 .actions ul {
     margin: 0;
