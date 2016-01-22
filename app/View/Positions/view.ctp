@@ -6,16 +6,6 @@
 			<?php echo h($position['Position']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
-		<dd>
-			<?php echo h($position['Position']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
-		<dd>
-			<?php echo h($position['Position']['modified']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('ポジション'); ?></dt>
 		<dd>
 			<?php echo h($position['Position']['position_name']); ?>
@@ -24,6 +14,16 @@
 		<dt><?php echo __('説明'); ?></dt>
 		<dd>
 			<?php echo h($position['Position']['text']); ?>
+			&nbsp;
+		</dd>
+				<dt><?php echo __('Created'); ?></dt>
+		<dd>
+			<?php echo h($position['Position']['created']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Modified'); ?></dt>
+		<dd>
+			<?php echo h($position['Position']['modified']); ?>
 			&nbsp;
 		</dd>
 	</dl>

@@ -6,16 +6,6 @@
 			<?php echo h($match['Match']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
-		<dd>
-			<?php echo h($match['Match']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
-		<dd>
-			<?php echo h($match['Match']['modified']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('開催日時'); ?></dt>
 		<dd>
 			<?php echo h($match['Match']['game_day']); ?>
@@ -38,6 +28,16 @@
 		<dt><?php echo __('失点'); ?></dt>
 		<dd>
 			<?php echo h($match['Match']['loss_score']); ?>
+			&nbsp;
+		</dd>
+				<dt><?php echo __('Created'); ?></dt>
+		<dd>
+			<?php echo h($match['Match']['created']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Modified'); ?></dt>
+		<dd>
+			<?php echo h($match['Match']['modified']); ?>
 			&nbsp;
 		</dd>
 	</dl>
