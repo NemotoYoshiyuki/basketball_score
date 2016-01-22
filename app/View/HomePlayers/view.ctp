@@ -22,12 +22,12 @@
 
 	<tr>
 		<td><?php echo __('身長'); ?></td>
-		<td><?php echo h($homePlayer['HomePlayer']['height']); ?></td>
+		<td><?php echo h($homePlayer['HomePlayer']['height']);?><?php echo "cm"; ?></td>
 	</tr>
 
 	<tr>
 		<td><?php echo __('体重'); ?></td>
-		<td><?php echo h($homePlayer['HomePlayer']['weight']); ?></td>
+		<td><?php echo h($homePlayer['HomePlayer']['weight']); ?><?php echo "kg"; ?></td>
 	</tr>
 
 
