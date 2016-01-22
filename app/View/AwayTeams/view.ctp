@@ -36,7 +36,7 @@
 	</ul>
 </div>
 <div class="related">
-	<h3><?php echo __('Related Matches'); ?></h3>
+	<h4><?php //echo __('Related Matches'); ?></h4>
 	<?php if (!empty($awayTeam['Match'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
