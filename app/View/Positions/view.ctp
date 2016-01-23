@@ -39,7 +39,6 @@
 	</ul>
 </div>
 <div class="related">
-	<h3><?php echo __('Related Home Players'); ?></h3>
 	<?php if (!empty($position['HomePlayer'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
