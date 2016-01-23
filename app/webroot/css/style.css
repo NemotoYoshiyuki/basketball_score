@@ -91,7 +91,9 @@ div.related table{
     margin: 0 auto 0 auto;
 }
 
-
+div.homePlayers view{
+    margin: 500px;
+}
 
 table {
     border-right:0;
@@ -124,6 +126,7 @@ td {
 }
 
 td a {
+    font-family:'Comic Sans MS';
     text-decoration: none;
 }
 
@@ -131,6 +134,7 @@ td.actions {
     text-align: center;
     white-space: nowrap;
 }
+
 
 table td.actions a {
     margin: 0px 6px;
@@ -153,7 +157,7 @@ table tr:nth-child(even) {
     margin:0 0 1.5em 0;
     list-style-type: none;
     white-space: nowrap;
-    font-family:'Impact';
+    font-family:'HG行書体';
 
 }
 .actions ul li a {
@@ -221,4 +225,8 @@ dd {
     margin-left: 10.5em;
     margin-top: -2em;
     vertical-align: top;
+}
+
+homePlayers view{
+
 }
