@@ -30,7 +30,7 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $match['Match']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $match['Match']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $match['Match']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $match['Match']['id']))); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $match['Match']['id']), array('confirm' => __('このレコードを消去しますか？ # %s?', $match['Match']['id']))); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

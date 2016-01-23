@@ -16,7 +16,7 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $awayTeam['AwayTeam']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $awayTeam['AwayTeam']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $awayTeam['AwayTeam']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $awayTeam['AwayTeam']['id']))); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $awayTeam['AwayTeam']['id']), array('confirm' => __('このレコードを消去しますか？ # %s?', $awayTeam['AwayTeam']['id']))); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

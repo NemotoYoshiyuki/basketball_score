@@ -28,7 +28,7 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $homePlayer['HomePlayer']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $homePlayer['HomePlayer']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $homePlayer['HomePlayer']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $homePlayer['HomePlayer']['id']))); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $homePlayer['HomePlayer']['id']), array('confirm' => __('このレコードを消去しますか？ # %s?', $homePlayer['HomePlayer']['id']))); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
