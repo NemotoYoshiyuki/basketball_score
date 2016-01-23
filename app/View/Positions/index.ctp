@@ -14,7 +14,12 @@
 	<tr>
 		<td><?php echo h($position['Position']['id']); ?>&nbsp;</td>
 		<td><?php echo h($position['Position']['position_name']); ?>&nbsp;</td>
-		<td><?php echo mb_substr($position['Position']['text'],0,50); ?>&nbsp;</td>
+		<td><?php
+				echo mb_substr($position['Position']['text'],0,20);
+				if(mb_strlen($position['Position']['text']) > 20){
+					echo '…';
+				}
+			?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $position['Position']['id'])); ?>
 			<?php /* echo $this->Html->link(__('Edit'), array('action' => 'edit', $position['Position']['id'])); */ ?>
