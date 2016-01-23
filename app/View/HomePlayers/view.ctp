@@ -53,7 +53,7 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('New Home Player'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('Edit Home Player'), array('action' => 'edit', $homePlayer['HomePlayer']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Home Player'), array('action' => 'delete', $homePlayer['HomePlayer']['id']), array(), __('この選手情報を消去しますか？ # %s?', $homePlayer['HomePlayer']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Home Player'), array('action' => 'delete', $homePlayer['HomePlayer']['id']), array(), __('このレコードを消去しますか？ # %s?', $homePlayer['HomePlayer']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Matches'), array('controller' => 'matches', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Home Players'), array('controller' => 'home_players','action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List Positions'), array('controller' => 'positions', 'action' => 'index')); ?> </li>

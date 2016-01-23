@@ -28,7 +28,7 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('New Away Team'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('Edit Away Team'), array('action' => 'edit', $awayTeam['AwayTeam']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Away Team'), array('action' => 'delete', $awayTeam['AwayTeam']['id']), array(), __('Are you sure you want to delete # %s?', $awayTeam['AwayTeam']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Away Team'), array('action' => 'delete', $awayTeam['AwayTeam']['id']), array(), __('このレコードを消去しますか？ # %s?', $awayTeam['AwayTeam']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Matches'), array('controller' => 'matches', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Home Players'), array('controller' => 'home_players','action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List Positions'), array('controller' => 'positions', 'action' => 'index')); ?> </li>
