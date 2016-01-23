@@ -14,17 +14,34 @@ class AwayTeamsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator', 'Session');
+
+	public $components = array(
+		'Paginator' => array(
+			'limit' => 10,
+			//'maxLimit' => 10,
+			//'order' => array('AwayTeam.modified' => 'desc')
+		)
+	);
+
+	public function index() {
+		//paginateメソッドでデータ検索
+		$this->set('awayTeams', $this->Paginator->paginate('AwayTeam'));
+	}
+
+	//public $components = array('Paginator', 'Session');
 
 /**
  * index method
  *
  * @return void
  */
-	public function index() {
+
+
+
+	/*public function index() {
 		$this->AwayTeam->recursive = 0;
 		$this->set('awayTeams', $this->Paginator->paginate());
-	}
+	}*/
 
 /**
  * view method
