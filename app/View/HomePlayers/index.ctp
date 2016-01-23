@@ -1,5 +1,5 @@
 <div class="homePlayers index">
-	<h2><?php echo __('Home Players'); ?></h2>
+	<h2><?php echo __('やったね鈴木のメンバー'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
