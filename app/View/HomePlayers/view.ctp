@@ -1,7 +1,9 @@
 <?php echo $this->Html->css('Home_Player'); ?>
 <div class="homePlayers view">
-	<?php echo "所属チーム<br>" ?>
-	<?php echo $this->Html->link(__('やったね鈴木 '), array('action' => 'index')); ?>
+    <div class="homeTeam">
+        <?php echo "所属チーム" ?>
+        <?php echo $this->Html->link(__('やったね鈴木 '), array('action' => 'index')); ?>
+     </div>
 	<div class="background">
 <table class="table">
 	<tr>
